@@ -1,0 +1,946 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DAC0D441FFF5ACE003A17DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0D431FFF5ACE003A17DB /* AppDelegate.m */; };
+		2DAC0D471FFF5ACE003A17DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0D461FFF5ACE003A17DB /* ViewController.m */; };
+		2DAC0D4A1FFF5ACE003A17DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DAC0D481FFF5ACE003A17DB /* Main.storyboard */; };
+		2DAC0D4C1FFF5ACE003A17DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DAC0D4B1FFF5ACE003A17DB /* Assets.xcassets */; };
+		2DAC0D4F1FFF5ACE003A17DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DAC0D4D1FFF5ACE003A17DB /* LaunchScreen.storyboard */; };
+		2DAC0D521FFF5ACE003A17DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0D511FFF5ACE003A17DB /* main.m */; };
+		2DAC0D5C1FFF5ACE003A17DB /* YQSettingsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0D5B1FFF5ACE003A17DB /* YQSettingsSDKTests.m */; };
+		2DAC0D671FFF5ACE003A17DB /* YQSettingsSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0D661FFF5ACE003A17DB /* YQSettingsSDKUITests.m */; };
+		2DAC0D9D1FFF5B6E003A17DB /* YQSettingsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAC0D941FFF5B6E003A17DB /* YQSettingsSDK.framework */; };
+		2DAC0DA41FFF5B6E003A17DB /* YQSettingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0DA31FFF5B6E003A17DB /* YQSettingsTests.m */; };
+		2DAC0DA91FFF5B6E003A17DB /* YQSettingsSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAC0D941FFF5B6E003A17DB /* YQSettingsSDK.framework */; };
+		2DAC0DAB1FFF5B6E003A17DB /* YQSettingsSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2DAC0D941FFF5B6E003A17DB /* YQSettingsSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2DAC0E411FFF685F003A17DB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DAC0E401FFF685F003A17DB /* Settings.bundle */; };
+		2DAC0E421FFF686F003A17DB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2DAC0E401FFF685F003A17DB /* Settings.bundle */; };
+		2DAC0E551FFF69A9003A17DB /* YQSettingsTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E431FFF69A5003A17DB /* YQSettingsTableDelegate.m */; };
+		2DAC0E561FFF69A9003A17DB /* YQSettingsTableDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E431FFF69A5003A17DB /* YQSettingsTableDelegate.m */; };
+		2DAC0E571FFF69A9003A17DB /* YQSettingsTimeRangView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E451FFF69A6003A17DB /* YQSettingsTimeRangView.m */; };
+		2DAC0E581FFF69A9003A17DB /* YQSettingsTimeRangView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E451FFF69A6003A17DB /* YQSettingsTimeRangView.m */; };
+		2DAC0E591FFF69A9003A17DB /* UIView+Alert_YQSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E471FFF69A6003A17DB /* UIView+Alert_YQSettings.m */; };
+		2DAC0E5A1FFF69A9003A17DB /* UIView+Alert_YQSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E471FFF69A6003A17DB /* UIView+Alert_YQSettings.m */; };
+		2DAC0E5B1FFF69A9003A17DB /* UIView+AutoLayout_YQSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E491FFF69A7003A17DB /* UIView+AutoLayout_YQSettings.m */; };
+		2DAC0E5C1FFF69A9003A17DB /* UIView+AutoLayout_YQSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E491FFF69A7003A17DB /* UIView+AutoLayout_YQSettings.m */; };
+		2DAC0E5D1FFF69A9003A17DB /* YQSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E4E1FFF69A8003A17DB /* YQSettingsModel.m */; };
+		2DAC0E5E1FFF69A9003A17DB /* YQSettingsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E4E1FFF69A8003A17DB /* YQSettingsModel.m */; };
+		2DAC0E5F1FFF69A9003A17DB /* YQSettingsTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E501FFF69A8003A17DB /* YQSettingsTableData.m */; };
+		2DAC0E601FFF69A9003A17DB /* YQSettingsTableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E501FFF69A8003A17DB /* YQSettingsTableData.m */; };
+		2DAC0E611FFF69A9003A17DB /* YQSettingsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E531FFF69A8003A17DB /* YQSettingsSwitchCell.m */; };
+		2DAC0E621FFF69A9003A17DB /* YQSettingsSwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E531FFF69A8003A17DB /* YQSettingsSwitchCell.m */; };
+		2DAC0E631FFF69A9003A17DB /* YQSettingsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E541FFF69A9003A17DB /* YQSettingsTableView.m */; };
+		2DAC0E641FFF69A9003A17DB /* YQSettingsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DAC0E541FFF69A9003A17DB /* YQSettingsTableView.m */; };
+		2DAC0E651FFF69C5003A17DB /* UIView+Alert_YQSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E4D1FFF69A7003A17DB /* UIView+Alert_YQSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E661FFF69C5003A17DB /* UIView+AutoLayout_YQSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E461FFF69A6003A17DB /* UIView+AutoLayout_YQSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E671FFF69C5003A17DB /* YQSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E4F1FFF69A8003A17DB /* YQSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E681FFF69C5003A17DB /* YQSettingsCellDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E4A1FFF69A7003A17DB /* YQSettingsCellDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E691FFF69C5003A17DB /* YQSettingsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E481FFF69A7003A17DB /* YQSettingsModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E6A1FFF69C5003A17DB /* YQSettingsSwitchCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E4C1FFF69A7003A17DB /* YQSettingsSwitchCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E6B1FFF69C5003A17DB /* YQSettingsTableData.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E511FFF69A8003A17DB /* YQSettingsTableData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E6C1FFF69C5003A17DB /* YQSettingsTableDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E521FFF69A8003A17DB /* YQSettingsTableDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E6D1FFF69C5003A17DB /* YQSettingsTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E4B1FFF69A7003A17DB /* YQSettingsTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DAC0E6E1FFF69C5003A17DB /* YQSettingsTimeRangView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DAC0E441FFF69A5003A17DB /* YQSettingsTimeRangView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DAC0D581FFF5ACE003A17DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DAC0D371FFF5ACE003A17DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DAC0D3E1FFF5ACE003A17DB;
+			remoteInfo = YQSettingsSDK;
+		};
+		2DAC0D631FFF5ACE003A17DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DAC0D371FFF5ACE003A17DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DAC0D3E1FFF5ACE003A17DB;
+			remoteInfo = YQSettingsSDK;
+		};
+		2DAC0D9E1FFF5B6E003A17DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DAC0D371FFF5ACE003A17DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DAC0D931FFF5B6E003A17DB;
+			remoteInfo = YQSettings;
+		};
+		2DAC0DA01FFF5B6E003A17DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DAC0D371FFF5ACE003A17DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DAC0D3E1FFF5ACE003A17DB;
+			remoteInfo = YQSettingsSDK;
+		};
+		2DAC0DA71FFF5B6E003A17DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DAC0D371FFF5ACE003A17DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DAC0D931FFF5B6E003A17DB;
+			remoteInfo = YQSettings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2DAC0DAA1FFF5B6E003A17DB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2DAC0DAB1FFF5B6E003A17DB /* YQSettingsSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2DAC0D3F1FFF5ACE003A17DB /* YQSettingsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YQSettingsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DAC0D421FFF5ACE003A17DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2DAC0D431FFF5ACE003A17DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2DAC0D451FFF5ACE003A17DB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2DAC0D461FFF5ACE003A17DB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2DAC0D491FFF5ACE003A17DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DAC0D4B1FFF5ACE003A17DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DAC0D4E1FFF5ACE003A17DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2DAC0D501FFF5ACE003A17DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DAC0D511FFF5ACE003A17DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DAC0D571FFF5ACE003A17DB /* YQSettingsSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQSettingsSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DAC0D5B1FFF5ACE003A17DB /* YQSettingsSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsSDKTests.m; sourceTree = "<group>"; };
+		2DAC0D5D1FFF5ACE003A17DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DAC0D621FFF5ACE003A17DB /* YQSettingsSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQSettingsSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DAC0D661FFF5ACE003A17DB /* YQSettingsSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsSDKUITests.m; sourceTree = "<group>"; };
+		2DAC0D681FFF5ACE003A17DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DAC0D941FFF5B6E003A17DB /* YQSettingsSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YQSettingsSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DAC0D971FFF5B6E003A17DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DAC0D9C1FFF5B6E003A17DB /* YQSettingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YQSettingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DAC0DA31FFF5B6E003A17DB /* YQSettingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsTests.m; sourceTree = "<group>"; };
+		2DAC0DA51FFF5B6E003A17DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DAC0E401FFF685F003A17DB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		2DAC0E431FFF69A5003A17DB /* YQSettingsTableDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsTableDelegate.m; sourceTree = "<group>"; };
+		2DAC0E441FFF69A5003A17DB /* YQSettingsTimeRangView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQSettingsTimeRangView.h; sourceTree = "<group>"; };
+		2DAC0E451FFF69A6003A17DB /* YQSettingsTimeRangView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsTimeRangView.m; sourceTree = "<group>"; };
+		2DAC0E461FFF69A6003A17DB /* UIView+AutoLayout_YQSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout_YQSettings.h"; sourceTree = "<group>"; };
+		2DAC0E471FFF69A6003A17DB /* UIView+Alert_YQSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Alert_YQSettings.m"; sourceTree = "<group>"; };
+		2DAC0E481FFF69A7003A17DB /* YQSettingsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQSettingsModel.h; sourceTree = "<group>"; };
+		2DAC0E491FFF69A7003A17DB /* UIView+AutoLayout_YQSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout_YQSettings.m"; sourceTree = "<group>"; };
+		2DAC0E4A1FFF69A7003A17DB /* YQSettingsCellDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQSettingsCellDelegate.h; sourceTree = "<group>"; };
+		2DAC0E4B1FFF69A7003A17DB /* YQSettingsTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQSettingsTableView.h; sourceTree = "<group>"; };
+		2DAC0E4C1FFF69A7003A17DB /* YQSettingsSwitchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQSettingsSwitchCell.h; sourceTree = "<group>"; };
+		2DAC0E4D1FFF69A7003A17DB /* UIView+Alert_YQSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Alert_YQSettings.h"; sourceTree = "<group>"; };
+		2DAC0E4E1FFF69A8003A17DB /* YQSettingsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsModel.m; sourceTree = "<group>"; };
+		2DAC0E4F1FFF69A8003A17DB /* YQSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQSettings.h; sourceTree = "<group>"; };
+		2DAC0E501FFF69A8003A17DB /* YQSettingsTableData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsTableData.m; sourceTree = "<group>"; };
+		2DAC0E511FFF69A8003A17DB /* YQSettingsTableData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQSettingsTableData.h; sourceTree = "<group>"; };
+		2DAC0E521FFF69A8003A17DB /* YQSettingsTableDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YQSettingsTableDelegate.h; sourceTree = "<group>"; };
+		2DAC0E531FFF69A8003A17DB /* YQSettingsSwitchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsSwitchCell.m; sourceTree = "<group>"; };
+		2DAC0E541FFF69A9003A17DB /* YQSettingsTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YQSettingsTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DAC0D3C1FFF5ACE003A17DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0DA91FFF5B6E003A17DB /* YQSettingsSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D541FFF5ACE003A17DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D5F1FFF5ACE003A17DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D901FFF5B6E003A17DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D991FFF5B6E003A17DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0D9D1FFF5B6E003A17DB /* YQSettingsSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DAC0D361FFF5ACE003A17DB = {
+			isa = PBXGroup;
+			children = (
+				2DAC0D411FFF5ACE003A17DB /* YQSettingsSDK */,
+				2DAC0D5A1FFF5ACE003A17DB /* YQSettingsSDKTests */,
+				2DAC0D651FFF5ACE003A17DB /* YQSettingsSDKUITests */,
+				2DAC0D951FFF5B6E003A17DB /* YQSettings */,
+				2DAC0DA21FFF5B6E003A17DB /* YQSettingsTests */,
+				2DAC0D401FFF5ACE003A17DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DAC0D401FFF5ACE003A17DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DAC0D3F1FFF5ACE003A17DB /* YQSettingsSDK.app */,
+				2DAC0D571FFF5ACE003A17DB /* YQSettingsSDKTests.xctest */,
+				2DAC0D621FFF5ACE003A17DB /* YQSettingsSDKUITests.xctest */,
+				2DAC0D941FFF5B6E003A17DB /* YQSettingsSDK.framework */,
+				2DAC0D9C1FFF5B6E003A17DB /* YQSettingsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DAC0D411FFF5ACE003A17DB /* YQSettingsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				2DAC0D741FFF5AFA003A17DB /* Settings */,
+				2DAC0D421FFF5ACE003A17DB /* AppDelegate.h */,
+				2DAC0D431FFF5ACE003A17DB /* AppDelegate.m */,
+				2DAC0D451FFF5ACE003A17DB /* ViewController.h */,
+				2DAC0D461FFF5ACE003A17DB /* ViewController.m */,
+				2DAC0D481FFF5ACE003A17DB /* Main.storyboard */,
+				2DAC0D4B1FFF5ACE003A17DB /* Assets.xcassets */,
+				2DAC0D4D1FFF5ACE003A17DB /* LaunchScreen.storyboard */,
+				2DAC0D501FFF5ACE003A17DB /* Info.plist */,
+				2DAC0D511FFF5ACE003A17DB /* main.m */,
+			);
+			path = YQSettingsSDK;
+			sourceTree = "<group>";
+		};
+		2DAC0D5A1FFF5ACE003A17DB /* YQSettingsSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DAC0D5B1FFF5ACE003A17DB /* YQSettingsSDKTests.m */,
+				2DAC0D5D1FFF5ACE003A17DB /* Info.plist */,
+			);
+			path = YQSettingsSDKTests;
+			sourceTree = "<group>";
+		};
+		2DAC0D651FFF5ACE003A17DB /* YQSettingsSDKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DAC0D661FFF5ACE003A17DB /* YQSettingsSDKUITests.m */,
+				2DAC0D681FFF5ACE003A17DB /* Info.plist */,
+			);
+			path = YQSettingsSDKUITests;
+			sourceTree = "<group>";
+		};
+		2DAC0D741FFF5AFA003A17DB /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2DAC0E4D1FFF69A7003A17DB /* UIView+Alert_YQSettings.h */,
+				2DAC0E471FFF69A6003A17DB /* UIView+Alert_YQSettings.m */,
+				2DAC0E461FFF69A6003A17DB /* UIView+AutoLayout_YQSettings.h */,
+				2DAC0E491FFF69A7003A17DB /* UIView+AutoLayout_YQSettings.m */,
+				2DAC0E4F1FFF69A8003A17DB /* YQSettings.h */,
+				2DAC0E4A1FFF69A7003A17DB /* YQSettingsCellDelegate.h */,
+				2DAC0E481FFF69A7003A17DB /* YQSettingsModel.h */,
+				2DAC0E4E1FFF69A8003A17DB /* YQSettingsModel.m */,
+				2DAC0E4C1FFF69A7003A17DB /* YQSettingsSwitchCell.h */,
+				2DAC0E531FFF69A8003A17DB /* YQSettingsSwitchCell.m */,
+				2DAC0E511FFF69A8003A17DB /* YQSettingsTableData.h */,
+				2DAC0E501FFF69A8003A17DB /* YQSettingsTableData.m */,
+				2DAC0E521FFF69A8003A17DB /* YQSettingsTableDelegate.h */,
+				2DAC0E431FFF69A5003A17DB /* YQSettingsTableDelegate.m */,
+				2DAC0E4B1FFF69A7003A17DB /* YQSettingsTableView.h */,
+				2DAC0E541FFF69A9003A17DB /* YQSettingsTableView.m */,
+				2DAC0E441FFF69A5003A17DB /* YQSettingsTimeRangView.h */,
+				2DAC0E451FFF69A6003A17DB /* YQSettingsTimeRangView.m */,
+				2DAC0E401FFF685F003A17DB /* Settings.bundle */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		2DAC0D951FFF5B6E003A17DB /* YQSettings */ = {
+			isa = PBXGroup;
+			children = (
+				2DAC0D971FFF5B6E003A17DB /* Info.plist */,
+			);
+			path = YQSettings;
+			sourceTree = "<group>";
+		};
+		2DAC0DA21FFF5B6E003A17DB /* YQSettingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DAC0DA31FFF5B6E003A17DB /* YQSettingsTests.m */,
+				2DAC0DA51FFF5B6E003A17DB /* Info.plist */,
+			);
+			path = YQSettingsTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2DAC0D911FFF5B6E003A17DB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0E651FFF69C5003A17DB /* UIView+Alert_YQSettings.h in Headers */,
+				2DAC0E661FFF69C5003A17DB /* UIView+AutoLayout_YQSettings.h in Headers */,
+				2DAC0E671FFF69C5003A17DB /* YQSettings.h in Headers */,
+				2DAC0E681FFF69C5003A17DB /* YQSettingsCellDelegate.h in Headers */,
+				2DAC0E691FFF69C5003A17DB /* YQSettingsModel.h in Headers */,
+				2DAC0E6A1FFF69C5003A17DB /* YQSettingsSwitchCell.h in Headers */,
+				2DAC0E6B1FFF69C5003A17DB /* YQSettingsTableData.h in Headers */,
+				2DAC0E6C1FFF69C5003A17DB /* YQSettingsTableDelegate.h in Headers */,
+				2DAC0E6D1FFF69C5003A17DB /* YQSettingsTableView.h in Headers */,
+				2DAC0E6E1FFF69C5003A17DB /* YQSettingsTimeRangView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2DAC0D3E1FFF5ACE003A17DB /* YQSettingsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DAC0D6B1FFF5ACE003A17DB /* Build configuration list for PBXNativeTarget "YQSettingsSDK" */;
+			buildPhases = (
+				2DAC0D3B1FFF5ACE003A17DB /* Sources */,
+				2DAC0D3C1FFF5ACE003A17DB /* Frameworks */,
+				2DAC0D3D1FFF5ACE003A17DB /* Resources */,
+				2DAC0DAA1FFF5B6E003A17DB /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DAC0DA81FFF5B6E003A17DB /* PBXTargetDependency */,
+			);
+			name = YQSettingsSDK;
+			productName = YQSettingsSDK;
+			productReference = 2DAC0D3F1FFF5ACE003A17DB /* YQSettingsSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DAC0D561FFF5ACE003A17DB /* YQSettingsSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DAC0D6E1FFF5ACE003A17DB /* Build configuration list for PBXNativeTarget "YQSettingsSDKTests" */;
+			buildPhases = (
+				2DAC0D531FFF5ACE003A17DB /* Sources */,
+				2DAC0D541FFF5ACE003A17DB /* Frameworks */,
+				2DAC0D551FFF5ACE003A17DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DAC0D591FFF5ACE003A17DB /* PBXTargetDependency */,
+			);
+			name = YQSettingsSDKTests;
+			productName = YQSettingsSDKTests;
+			productReference = 2DAC0D571FFF5ACE003A17DB /* YQSettingsSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DAC0D611FFF5ACE003A17DB /* YQSettingsSDKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DAC0D711FFF5ACE003A17DB /* Build configuration list for PBXNativeTarget "YQSettingsSDKUITests" */;
+			buildPhases = (
+				2DAC0D5E1FFF5ACE003A17DB /* Sources */,
+				2DAC0D5F1FFF5ACE003A17DB /* Frameworks */,
+				2DAC0D601FFF5ACE003A17DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DAC0D641FFF5ACE003A17DB /* PBXTargetDependency */,
+			);
+			name = YQSettingsSDKUITests;
+			productName = YQSettingsSDKUITests;
+			productReference = 2DAC0D621FFF5ACE003A17DB /* YQSettingsSDKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		2DAC0D931FFF5B6E003A17DB /* YQSettings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DAC0DAC1FFF5B6E003A17DB /* Build configuration list for PBXNativeTarget "YQSettings" */;
+			buildPhases = (
+				2DAC0D8F1FFF5B6E003A17DB /* Sources */,
+				2DAC0D901FFF5B6E003A17DB /* Frameworks */,
+				2DAC0D911FFF5B6E003A17DB /* Headers */,
+				2DAC0D921FFF5B6E003A17DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YQSettings;
+			productName = YQSettings;
+			productReference = 2DAC0D941FFF5B6E003A17DB /* YQSettingsSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2DAC0D9B1FFF5B6E003A17DB /* YQSettingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DAC0DAF1FFF5B6E003A17DB /* Build configuration list for PBXNativeTarget "YQSettingsTests" */;
+			buildPhases = (
+				2DAC0D981FFF5B6E003A17DB /* Sources */,
+				2DAC0D991FFF5B6E003A17DB /* Frameworks */,
+				2DAC0D9A1FFF5B6E003A17DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DAC0D9F1FFF5B6E003A17DB /* PBXTargetDependency */,
+				2DAC0DA11FFF5B6E003A17DB /* PBXTargetDependency */,
+			);
+			name = YQSettingsTests;
+			productName = YQSettingsTests;
+			productReference = 2DAC0D9C1FFF5B6E003A17DB /* YQSettingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DAC0D371FFF5ACE003A17DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = weixb;
+				TargetAttributes = {
+					2DAC0D3E1FFF5ACE003A17DB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2DAC0D561FFF5ACE003A17DB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2DAC0D3E1FFF5ACE003A17DB;
+					};
+					2DAC0D611FFF5ACE003A17DB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2DAC0D3E1FFF5ACE003A17DB;
+					};
+					2DAC0D931FFF5B6E003A17DB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2DAC0D9B1FFF5B6E003A17DB = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2DAC0D3E1FFF5ACE003A17DB;
+					};
+				};
+			};
+			buildConfigurationList = 2DAC0D3A1FFF5ACE003A17DB /* Build configuration list for PBXProject "YQSettingsSDK" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DAC0D361FFF5ACE003A17DB;
+			productRefGroup = 2DAC0D401FFF5ACE003A17DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DAC0D3E1FFF5ACE003A17DB /* YQSettingsSDK */,
+				2DAC0D561FFF5ACE003A17DB /* YQSettingsSDKTests */,
+				2DAC0D611FFF5ACE003A17DB /* YQSettingsSDKUITests */,
+				2DAC0D931FFF5B6E003A17DB /* YQSettings */,
+				2DAC0D9B1FFF5B6E003A17DB /* YQSettingsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DAC0D3D1FFF5ACE003A17DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0E411FFF685F003A17DB /* Settings.bundle in Resources */,
+				2DAC0D4F1FFF5ACE003A17DB /* LaunchScreen.storyboard in Resources */,
+				2DAC0D4C1FFF5ACE003A17DB /* Assets.xcassets in Resources */,
+				2DAC0D4A1FFF5ACE003A17DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D551FFF5ACE003A17DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D601FFF5ACE003A17DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D921FFF5B6E003A17DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0E421FFF686F003A17DB /* Settings.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D9A1FFF5B6E003A17DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DAC0D3B1FFF5ACE003A17DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0E5E1FFF69A9003A17DB /* YQSettingsModel.m in Sources */,
+				2DAC0E5A1FFF69A9003A17DB /* UIView+Alert_YQSettings.m in Sources */,
+				2DAC0E621FFF69A9003A17DB /* YQSettingsSwitchCell.m in Sources */,
+				2DAC0D471FFF5ACE003A17DB /* ViewController.m in Sources */,
+				2DAC0E601FFF69A9003A17DB /* YQSettingsTableData.m in Sources */,
+				2DAC0D521FFF5ACE003A17DB /* main.m in Sources */,
+				2DAC0E5C1FFF69A9003A17DB /* UIView+AutoLayout_YQSettings.m in Sources */,
+				2DAC0E561FFF69A9003A17DB /* YQSettingsTableDelegate.m in Sources */,
+				2DAC0E641FFF69A9003A17DB /* YQSettingsTableView.m in Sources */,
+				2DAC0D441FFF5ACE003A17DB /* AppDelegate.m in Sources */,
+				2DAC0E581FFF69A9003A17DB /* YQSettingsTimeRangView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D531FFF5ACE003A17DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0D5C1FFF5ACE003A17DB /* YQSettingsSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D5E1FFF5ACE003A17DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0D671FFF5ACE003A17DB /* YQSettingsSDKUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D8F1FFF5B6E003A17DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0E611FFF69A9003A17DB /* YQSettingsSwitchCell.m in Sources */,
+				2DAC0E591FFF69A9003A17DB /* UIView+Alert_YQSettings.m in Sources */,
+				2DAC0E571FFF69A9003A17DB /* YQSettingsTimeRangView.m in Sources */,
+				2DAC0E5D1FFF69A9003A17DB /* YQSettingsModel.m in Sources */,
+				2DAC0E5F1FFF69A9003A17DB /* YQSettingsTableData.m in Sources */,
+				2DAC0E5B1FFF69A9003A17DB /* UIView+AutoLayout_YQSettings.m in Sources */,
+				2DAC0E631FFF69A9003A17DB /* YQSettingsTableView.m in Sources */,
+				2DAC0E551FFF69A9003A17DB /* YQSettingsTableDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DAC0D981FFF5B6E003A17DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DAC0DA41FFF5B6E003A17DB /* YQSettingsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DAC0D591FFF5ACE003A17DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DAC0D3E1FFF5ACE003A17DB /* YQSettingsSDK */;
+			targetProxy = 2DAC0D581FFF5ACE003A17DB /* PBXContainerItemProxy */;
+		};
+		2DAC0D641FFF5ACE003A17DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DAC0D3E1FFF5ACE003A17DB /* YQSettingsSDK */;
+			targetProxy = 2DAC0D631FFF5ACE003A17DB /* PBXContainerItemProxy */;
+		};
+		2DAC0D9F1FFF5B6E003A17DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DAC0D931FFF5B6E003A17DB /* YQSettings */;
+			targetProxy = 2DAC0D9E1FFF5B6E003A17DB /* PBXContainerItemProxy */;
+		};
+		2DAC0DA11FFF5B6E003A17DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DAC0D3E1FFF5ACE003A17DB /* YQSettingsSDK */;
+			targetProxy = 2DAC0DA01FFF5B6E003A17DB /* PBXContainerItemProxy */;
+		};
+		2DAC0DA81FFF5B6E003A17DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DAC0D931FFF5B6E003A17DB /* YQSettings */;
+			targetProxy = 2DAC0DA71FFF5B6E003A17DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DAC0D481FFF5ACE003A17DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DAC0D491FFF5ACE003A17DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2DAC0D4D1FFF5ACE003A17DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DAC0D4E1FFF5ACE003A17DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DAC0D691FFF5ACE003A17DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2DAC0D6A1FFF5ACE003A17DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2DAC0D6C1FFF5ACE003A17DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				INFOPLIST_FILE = YQSettingsSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettingsSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DAC0D6D1FFF5ACE003A17DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				INFOPLIST_FILE = YQSettingsSDK/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettingsSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2DAC0D6F1FFF5ACE003A17DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				INFOPLIST_FILE = YQSettingsSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettingsSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQSettingsSDK.app/YQSettingsSDK";
+			};
+			name = Debug;
+		};
+		2DAC0D701FFF5ACE003A17DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				INFOPLIST_FILE = YQSettingsSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettingsSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQSettingsSDK.app/YQSettingsSDK";
+			};
+			name = Release;
+		};
+		2DAC0D721FFF5ACE003A17DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				INFOPLIST_FILE = YQSettingsSDKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettingsSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YQSettingsSDK;
+			};
+			name = Debug;
+		};
+		2DAC0D731FFF5ACE003A17DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				INFOPLIST_FILE = YQSettingsSDKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettingsSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YQSettingsSDK;
+			};
+			name = Release;
+		};
+		2DAC0DAD1FFF5B6E003A17DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YQSettings/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettings;
+				PRODUCT_MODULE_NAME = YQSettingsSDK;
+				PRODUCT_NAME = YQSettingsSDK;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2DAC0DAE1FFF5B6E003A17DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = YQSettings/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettings;
+				PRODUCT_MODULE_NAME = YQSettingsSDK;
+				PRODUCT_NAME = YQSettingsSDK;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DAC0DB01FFF5B6E003A17DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				INFOPLIST_FILE = YQSettingsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettingsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQSettingsSDK.app/YQSettingsSDK";
+			};
+			name = Debug;
+		};
+		2DAC0DB11FFF5B6E003A17DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 77393G83KM;
+				INFOPLIST_FILE = YQSettingsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.YQHD.YQSettingsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YQSettingsSDK.app/YQSettingsSDK";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DAC0D3A1FFF5ACE003A17DB /* Build configuration list for PBXProject "YQSettingsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DAC0D691FFF5ACE003A17DB /* Debug */,
+				2DAC0D6A1FFF5ACE003A17DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DAC0D6B1FFF5ACE003A17DB /* Build configuration list for PBXNativeTarget "YQSettingsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DAC0D6C1FFF5ACE003A17DB /* Debug */,
+				2DAC0D6D1FFF5ACE003A17DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DAC0D6E1FFF5ACE003A17DB /* Build configuration list for PBXNativeTarget "YQSettingsSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DAC0D6F1FFF5ACE003A17DB /* Debug */,
+				2DAC0D701FFF5ACE003A17DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DAC0D711FFF5ACE003A17DB /* Build configuration list for PBXNativeTarget "YQSettingsSDKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DAC0D721FFF5ACE003A17DB /* Debug */,
+				2DAC0D731FFF5ACE003A17DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DAC0DAC1FFF5B6E003A17DB /* Build configuration list for PBXNativeTarget "YQSettings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DAC0DAD1FFF5B6E003A17DB /* Debug */,
+				2DAC0DAE1FFF5B6E003A17DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DAC0DAF1FFF5B6E003A17DB /* Build configuration list for PBXNativeTarget "YQSettingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DAC0DB01FFF5B6E003A17DB /* Debug */,
+				2DAC0DB11FFF5B6E003A17DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DAC0D371FFF5ACE003A17DB /* Project object */;
+}
